@@ -2,8 +2,8 @@ var express = require('express');
 var router = express.Router();
 const db = require('../database/db')
 const bodyParser = require('body-parser')
-const personRoutes = require('../routes/personRoutes') //Import the personRoutes.js
-const menuItemRoutes = require('../routes/menuItemRoutes')  //import the menuItemRoutes.js
+const personRoutes = require('./personRoutes') //Import the personRoutes.js
+const menuItemRoutes = require('./menuItemRoutes')  //import the menuItemRoutes.js
 
 router.use(bodyParser.json());   //it store all data in req.body
 
